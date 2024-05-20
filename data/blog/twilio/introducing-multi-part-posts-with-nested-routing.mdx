@@ -1,7 +1,7 @@
 ---
 title: Introducing Multi-part Posts with Nested Routing
 date: '2021-05-02'
-tags: ['multi-author', 'next-js', 'feature']
+tags: ['twilio', 'node-js', 'use case']
 draft: false
 summary: 'The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!'
 ---
@@ -28,3 +28,34 @@ Here are some reasons to use nested routes
 ## Note
 
 - The previous/next post links at bottom of the template are currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.
+
+A sample post with markdown.
+
+## Inline Highlighting
+
+Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
+
+## Code Blocks
+
+Some Javascript code
+
+```javascript
+var num1, num2, sum
+num1 = prompt('Enter first number')
+num2 = prompt('Enter second number')
+sum = parseInt(num1) + parseInt(num2) // "+" means "add"
+alert('Sum = ' + sum) // "+" means combine into a string
+```
+
+Some Python code 🐍
+
+```python
+def fib():
+    a, b = 0, 1
+    while True:            # First iteration:
+        yield a            # yield 0 to start with and then
+        a, b = b, a + b    # a will now be 1, and b will also be 1, (0 + 1)
+
+for index, fibonacci_number in zip(range(10), fib()):
+     print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
+```
